@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>select2实例</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="css/select2.min.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/select2.min.js"></script>
+
+</head>
+<body>
+	<label class="control-label col-sm-1">账号类型: </label>
+	<div class="col-sm-3">
+		<select class="select_gallery" style="width:100%;">
+			<optgroup label="用户">
+				<option value="0">member</option>
+				<option value="1">VIP</option>
+			</optgroup>
+			<optgroup label="管理员">
+				<option value="1">admin</option>
+			</optgroup>
+		</select>
+	</div>
+	<script type="text/javascript">
+		$(".select_gallery").select2();
+	</script>
+</body>
+</html>
